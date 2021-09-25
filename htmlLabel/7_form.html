@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 表单域 -->
+    <form action="11.jps" method="GET">
+        <!-- label 中 for 与 id 一致 -->
+        <p><label for="name">文本框：<input type="text" value="test" maxlength="5" name="name" id="name"/> </label> <br/> </p>
+        <p><label>密码框：<input type="password" value="test" name="pwd" /> </label> <br/> </p>
+        <!-- checked 默认选择 -->
+        <p><label>单选按钮：man:<input type="radio" value="0" name="sex" checked/> woman:<input type="radio" value="1" name="sex" /> </label> <br/> </p>
+        <p><label>多选按钮：吃饭: <input type="checkbox" name="like" value="0" checked/> 睡觉: <input type="checkbox" name="like" value="1" /> 玩游戏: <input type="checkbox" name="like" value="2" /> </label> <br/> </p>
+        <p><label>提交按钮：<input type="submit" value="提交"> </label> <br/> </p>
+        <p><label>重置按钮：<input type="reset" value="重置"> </label> <br/> </p>
+        <p><label>普通按钮：<input type="button" value="普通按钮"> </label> <br/> </p>
+        <p><label>上传文件：<input type="file"> </label> <br/> </p>
+        <p><label for="address">下拉框：
+            <select name="address" id="address">
+                <option value="" selected>--选择地点--</option>
+                <option value="">上海</option>
+                <option value="">北京</option>
+                <option value="">常德</option>
+            </select>
+        </label></p>
+        <p>
+            <label for="area">文本域：
+                <textarea name="area" id="area" cols="30" rows="4"> 文本域 textarea </textarea>
+            </label>
+        </p>
+    </form>
+</body>
+
+</html>
