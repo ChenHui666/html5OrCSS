@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: green;
+        }
+        
+        div {
+            color: yellow;
+        }
+        /* 
+            类选择器的命名规则
+            不要使用数字命名
+            可以用 - 符号在名字中
+            不要使用简写，要有意义
+         */
+        /* 类选择器，谁要使用谁调用就可以了 */
+        
+        .black {
+            color: black;
+        }
+        
+        .red {
+            /* 宽度 */
+            width: 100px;
+            /* 高度 */
+            height: 100px;
+            /* 颜色 */
+            background-color: red;
+        }
+        
+        .gray {
+            /* 宽度 */
+            width: 100px;
+            /* 高度 */
+            height: 100px;
+            /* 颜色 */
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <p>man</p>
+    <p class="black">man</p>
+    <p>man</p>
+    <div>women</div>
+    <div>women</div>
+    <div>women</div>
+
+    <div class="red"></div>
+    <div class="gray"></div>
+    <div class="red"></div>
+</body>
+
+</html>
