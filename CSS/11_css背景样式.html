@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 背景颜色 */
+            /* background-color: chartreuse; */
+            background-image: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            background-position: top center;
+            /* 设定背景图片是否滚动默认是滚动的(scroll)，设置为不滚动（fixed） */
+            background-attachment: scroll;
+            /* 合并背景属性 color  image repeat attachment position*/
+            /* background: 背景颜色 背景图片 是否平铺 是否滚动 背景位置; */
+        }
+        /* 背景图片会压着背景颜色 */
+        
+        div {
+            /* 背景图片 */
+            background-image: url('./images/logo.png');
+            width: 500px;
+            height: 500px;
+            /* 背景不平铺 */
+            /* background-repeat: no-repeat; */
+            /* 背景默认平铺 */
+            /* background-repeat: repeat; */
+            /* 背景沿x轴平铺 */
+            /* background-repeat: repeat-x; */
+            /* 背景沿y轴平铺 */
+            /* background-repeat: repeat-y; */
+        }
+        
+        .span {
+            /* 设置背景颜色的透明度 */
+            background-color: rgba(0, 0, 0, 0.2);
+            background-image: url('./images/logo.png');
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 500px;
+            /* 背景图片方位,如果是两个与先后无关，如果只有一个按照方位选择，忽略另一个值并居中 */
+            /* background-position: center left; */
+            /* 第一个值是x轴坐标，第二个值是y轴坐标 */
+            background-position: 20px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <br/><br/><br/><br/>
+    <div class="span"></div>
+</body>
+
+</html>

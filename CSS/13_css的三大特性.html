@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            层叠性：样式冲突，以就近原则，谁近用谁，在样式属性相同的情况下
+            继承性：子标签会继承父标签一些元素，如字体相关的
+            优先级：继承和*　＜　元素选择器　＜　类选择器，伪类选择器　＜　ID选择器　＜　行内样式　＜　!important重要的
+         */
+        
+        div {
+            color: red;
+            font-size: 18px;
+        }
+        
+        div {
+            color: pink;
+        }
+        
+        body {
+            color: blue;
+            /* 1.5 为 当前文字大小的1.5倍为行号 */
+            font-size: 25px/1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div>dddd</div>
+    <p>pppppppp</p>
+</body>
+
+</html>
