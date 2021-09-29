@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            /* 实线边框solid，虚线dashed，点线dotted */
+            border-style: dashed;
+            /* 边框颜色 */
+            border-color: pink;
+            /* 边框粗细 */
+            border-width: 2px;
+            /* border简写形式，没有循序 */
+            /* border: 1px solid red; */
+            /* 盒子内边距,边框与内容的距离 */
+            padding: 10px;
+            /* 盒子外边距,边框与外边的距离 */
+            margin: 10px;
+        }
+        
+        table,
+        td {
+            border: red solid 1px;
+        }
+        
+        table {
+            width: 100px;
+            height: 100px;
+            /* 相邻的边框进行合并 */
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        .mg {
+            /* 元素在页面中间，只对块级元素有效 */
+            margin: 0 auto;
+        }
+        /* 清除默认内外边距，一般为代码第一行 */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>12321</div>
+    <br>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <br>
+    <div class="mg"></div>
+</body>
+
+</html>
