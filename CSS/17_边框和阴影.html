@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            /* 边框圆形，px值为圆的半径，%为高度的对比度，可以多个值以左上角为第一个 */
+            border-radius: 20%;
+            background-color: skyblue;
+            /* 阴影：s-shadow(必填，水平阴影的位置，允许为负值) v-shadow（必填，直阴影的位置，允许为负值） blue（模糊距离） spread（阴影此存） color（阴影颜色） inset（外部阴影outset内部阴影） */
+            /* box-shadow: 10px 10px 10px 10px chartreuse; */
+            /* 文字阴影 */
+            text-shadow: 5px 5px 2px black;
+        }
+        
+        div:hover {
+            box-shadow: 10px 10px 10px 10px chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        我就是恐惧
+    </div>
+</body>
+
+</html>
