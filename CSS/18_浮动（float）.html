@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 浮动属性(float)盒子不占地方  */
+        /* 浮动属性(float)盒子不占地方,如果是行内元素加了浮动，就会高度和宽度，元素中间没有间距，如果没有给宽度，就会和内容的宽度一样  */
         
         .black {
             width: 100px;
@@ -22,12 +22,20 @@
             background-color: pink;
             /* float: right; */
         }
+        
+        div {
+            width: 500px;
+            margin: 0 auto;
+            background-color: blue;
+        }
     </style>
 </head>
 
 <body>
-    <div class="black">1</div>
-    <div class="pink">2</div>
+    <div>
+        <div class="black">1</div>
+        <div class="pink">2</div>
+    </div>
 </body>
 
 </html>
