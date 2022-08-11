@@ -6,3 +6,103 @@
     /* 内边距 */
     padding: 0;
 }
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+li {
+    /* 去掉说有的li前面的符号样式 */
+    list-style: none;
+}
+
+a {
+    /* 去掉所有a链接中的下划线 */
+    text-decoration: none;
+}
+
+.header {
+    height: 42px;
+    /* 会有重叠 */
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0px 14px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    padding: 0px 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid #00a4ff;
+    color: #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    background-color: aquamarine;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 360px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+}
+
+.search input:focus {
+    border: 1px solid #00a4ff;
+}
+
+
+/* 对input中placeholder进行样式更改 */
+
+.search input::-webkit-input-placeholder {
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    border: none;
+    background-image: url(../images/btn.png);
+}
+
+.user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+}
